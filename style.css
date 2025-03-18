@@ -149,6 +149,11 @@ nav > a > img {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #d7d7d7;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .menu-box {

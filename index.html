@@ -437,18 +437,18 @@
         </section>
     </div>
 </body>
-    <script>
-    // SideBar
-    function sideBar__show() {
+<script>
+// SideBar
+function sideBar__show() {
     $('.mobile-sideBar').addClass('active'); 
-    }
+}
 
-    function sideBar__hide() {
+function sideBar__hide() {
     $('.mobile-sideBar').removeClass('active'); 
-    }
+}
 
 
-    function sideBar__init() {
+function sideBar__init() {
     $('.btn_sideBar').click(function() {
     sideBar__show();
     });
@@ -456,12 +456,12 @@
     $('.clear').click(function() {
     sideBar__hide();
     });
-    }
+}
 
-    sideBar__init();
+sideBar__init();
 
-    // Swiper
-    var swiper = new Swiper(".mySwiper-1", {
+// Swiper
+var swiper = new Swiper(".mySwiper-1", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -476,26 +476,26 @@
     pagination: {
     el: ".swiper-pagination",
     },
-    });
+});
 
-    var swiper = new Swiper(".mySwiper-2", {
+var swiper = new Swiper(".mySwiper-2", {
     effect: "cards",
     grabCursor: true,
-    });
+});
 
 
-    // catrgory-swiper
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
-    });
+// catrgory-swiper
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+});
 
-   //Slide
-    $('.variable-width').slick({
+//Slide
+$('.variable-width').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -504,29 +504,29 @@
     focusOnSelect: true,
     variableWidth: true,
     arrows: false
-    });
+});
 
-    // Popup
-    function Popup__show() {
+// Popup
+function Popup__show() {
     $('.LogIn').addClass('active'); 
     $('body').css('overflow','hidden');
-    }
+}
 
-    function Popup__hide() {
+function Popup__hide() {
     $('.LogIn').removeClass('active'); 
     $('body').css('overflow','visible');
-    }
+}
 
 
-    function Popup__init() {
+function Popup__init() {
     $('.btn_logIn').click(function() {
     Popup__show();
-    });
+});
 
-    $('.clear').click(function() {
+$('.clear').click(function() {
     Popup__hide();
-    });
-    }
+});
+}
 
 Popup__init();
 
@@ -534,24 +534,24 @@ Popup__init();
 function Popup_2__show() {
     $('.Cart').addClass('active'); 
     $('body').css('overflow','hidden');
-    }
+}
 
-    function Popup_2__hide() {
+function Popup_2__hide() {
     $('.Cart').removeClass('active'); 
     $('body').css('overflow','visible');
-    }
+}
 
 
-    function Popup_2__init() {
-    $('.btn_cart').click(function() {
-        Popup_2__show();
-    });
-    
-    $('.clear').click(function() {
-        Popup_2__hide();
-    });
-    }
+function Popup_2__init() {
+$('.btn_cart').click(function() {
+    Popup_2__show();
+});
 
-    Popup_2__init();
-    </script>
+$('.clear').click(function() {
+    Popup_2__hide();
+});
+}
+
+Popup_2__init();
+</script>
 </html>

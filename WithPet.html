@@ -31,10 +31,52 @@
                 <li><a href="http://192.168.1.3:5500/Contact.html">Contact</a></li>
             </ul>
             <ul class="menu-box-2">
-                <li><a href="#" class="font-20-g">Cart</a></li>
-                <li><a href="#" class="font-20-g">Log in</a></li>
+                <li><a href="#" class="font-20-g btn_cart">Cart</a></li>
+                <li><a href="#" class="font-20-g btn_logIn">Log in</a></li>
             </ul>
         </nav>
+        <section class="bg LogIn">
+            <div class="popup">
+                <div>
+                    <a href="http://192.168.1.3:5500/WithPet.html"><img src="https://imgur.com/IgM3HeN.png" alt=""></a>
+                </div>
+            <div>
+                <img src="https://i.imgur.com/USJ0DrP.png" alt="">
+                <div>
+                    <span>아이디</span>
+                    <input type="text" placeholder="" value="">
+                </div>
+                <div>
+                    <span>비밀번호</span>
+                    <input type="text" placeholder="" value="">
+                </div>
+                <button>로그인</button>
+                <button>회원가입</button>
+            </div>
+        </section>
+        <section class="bg Cart">
+            <div class="popup-cart">
+                <div>
+                    <a href="http://192.168.1.3:5500/WithPet.html"><img src="https://imgur.com/IgM3HeN.png" alt=""></a>
+                </div>
+                <div>
+                    <h1>Cart</h1>
+                </div>
+                <div>
+                    <span>배송주소</span>
+                    <input type="text" placeholder="주소를 입력해주세요." value="">
+                    <button>변경</button>
+                </div>
+                <div class="list">
+                    <button>전체선택</button>
+                    <span>담은 식물이 없습니다.</span>
+                </div>
+                <div class="btn_box">
+                    <button>삭제하기</button>
+                    <button>결제하기</button>
+                </div>
+            </div>
+        </section>
         <section class="basic-plant">
             <h1 class="font-80">With Pet</h1>
             <div class="plant-box">
@@ -434,56 +476,104 @@
         </section>
     </div>
 
-    <script>
-                function BoxCount__init() {
-        $(".box-count").each(function (index, node) {
-            const $boxCount = $(node);
+<script>
+function BoxCount__init() {
+$(".box-count").each(function (index, node) {
+    const $boxCount = $(node);
 
-            const $btnMinus = $boxCount.find(".box-count__minus");
-            const $btnPlus = $boxCount.find(".box-count__plus");
-            const $num = $boxCount.find(".box-count__num");
+    const $btnMinus = $boxCount.find(".box-count__minus");
+    const $btnPlus = $boxCount.find(".box-count__plus");
+    const $num = $boxCount.find(".box-count__num");
 
-            $btnMinus.click(function () {
-            const num = parseInt($num.text());
-            const newNum = num - 1 >= 0 ? num - 1 : 0;
-            $num.text(newNum);
-            });
+    $btnMinus.click(function () {
+    const num = parseInt($num.text());
+    const newNum = num - 1 >= 0 ? num - 1 : 0;
+    $num.text(newNum);
+    });
 
-            $btnPlus.click(function () {
-            const num = parseInt($num.text());
-            const newNum = num + 1 >= 0 ? num + 1 : 0;
-            $num.text(newNum);
-            });
-        });
+    $btnPlus.click(function () {
+    const num = parseInt($num.text());
+    const newNum = num + 1 >= 0 ? num + 1 : 0;
+    $num.text(newNum);
+    });
+});
+}
+BoxCount__init();
+
+//card-hover
+$('[class^="plant-"]').mouseenter(function () {
+    let className = $(this).attr("class").split(" ")[0];
+    let $targetDiv = $(`div.${className}`);
+    
+    // 선택된 요소가 존재하는지 확인 후 실행
+    if ($targetDiv.length && $targetDiv.attr('class')) {
+        let className2 = $targetDiv.attr('class').split(' ')[0];
+        if (className === className2) {
+            $targetDiv.addClass('active');
         }
-        BoxCount__init();
+    }
+});
 
-        //card-hover
-        $('[class^="plant-"]').mouseenter(function () {
-            let className = $(this).attr("class").split(" ")[0];
-            let $targetDiv = $(`div.${className}`);
-            
-            // 선택된 요소가 존재하는지 확인 후 실행
-            if ($targetDiv.length && $targetDiv.attr('class')) {
-                let className2 = $targetDiv.attr('class').split(' ')[0];
-                if (className === className2) {
-                    $targetDiv.addClass('active');
-                }
-            }
-        });
+$('[class^="plant-"]').mouseleave(function () {
+    let className = $(this).attr("class").split(" ")[0];
+    let $targetDiv = $(`div.${className}`);
+    
+    // 선택된 요소가 존재하는지 확인 후 실행
+    if ($targetDiv.length && $targetDiv.attr('class')) {
+        let className2 = $targetDiv.attr('class').split(' ')[0];
+        if (className === className2) {
+            $targetDiv.removeClass('active');
+        }
+    }
+});
 
-        $('[class^="plant-"]').mouseleave(function () {
-            let className = $(this).attr("class").split(" ")[0];
-            let $targetDiv = $(`div.${className}`);
-            
-            // 선택된 요소가 존재하는지 확인 후 실행
-            if ($targetDiv.length && $targetDiv.attr('class')) {
-                let className2 = $targetDiv.attr('class').split(' ')[0];
-                if (className === className2) {
-                    $targetDiv.removeClass('active');
-                }
-            }
-        });
-    </script>
+// Popup
+function Popup__show() {
+    $('.LogIn').addClass('active'); 
+    $('body').css('overflow','hidden');
+}
+
+function Popup__hide() {
+    $('.LogIn').removeClass('active'); 
+    $('body').css('overflow','visible');
+}
+
+
+function Popup__init() {
+    $('.btn_logIn').click(function() {
+    Popup__show();
+});
+
+$('.clear').click(function() {
+    Popup__hide();
+});
+}
+
+Popup__init();
+
+// Popup
+function Popup_2__show() {
+    $('.Cart').addClass('active'); 
+    $('body').css('overflow','hidden');
+}
+
+function Popup_2__hide() {
+    $('.Cart').removeClass('active'); 
+    $('body').css('overflow','visible');
+}
+
+
+function Popup_2__init() {
+$('.btn_cart').click(function() {
+    Popup_2__show();
+});
+
+$('.clear').click(function() {
+    Popup_2__hide();
+});
+}
+
+Popup_2__init();
+</script>
 </body>
 </html>
