@@ -1183,9 +1183,12 @@ p {
 
 .PC > .image-block {
   display: grid;
-  grid-template-columns: 660px 362px;
-  grid-template-rows: 411px 411px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .how-to div > img:nth-child(1),
