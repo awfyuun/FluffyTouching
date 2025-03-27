@@ -1186,12 +1186,14 @@ p {
   grid-template-columns: 660px 362px;
   grid-template-rows: 411px 411px;
   position: absolute;
+  gap: 20px;
   top: 55%;
   left: 40%;
 }
 
 .image-block img {
   border-radius: 40px;
+  object-fit: cover;
 }
 
 .how-to div > img:nth-child(1),
@@ -1958,7 +1960,7 @@ div.plant-8.active {
 
 .mobile > .basic-plant > h1 {
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 180px;
   margin-left: 20px;
   font-size: 48px;
   line-height: 38px;
@@ -1994,7 +1996,7 @@ div.plant-8.active {
 .menu-plant-note > h1 {
   display: flex;
   justify-content: center;
-  margin-top: 119px;
+  margin-top: 180px;
 }
 
 .menu-plant-note > container > div {
@@ -2146,7 +2148,7 @@ div.plant-8.active {
 
 .mobile .menu-plant-note > h1 {
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 180px;
   margin-left: 20px;
   font-size: 48px;
   line-height: 38px;
@@ -2377,12 +2379,12 @@ div.plant-8.active {
 
 .mobile > .contact {
   display: block;
+  height: 1975px;
 }
 
 .mobile > .contact > .container {
   width: 362px;
   height: 1223px;
-  margin-bottom: 25px;
 }
 
 .mobile > .contact > .container > h1 {
