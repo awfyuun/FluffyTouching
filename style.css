@@ -1181,12 +1181,6 @@ p {
   cursor: pointer;
 }
 
-.how-to {
-  position: absolute;
-  top: 55%;
-  left: 0%;
-}
-
 .PC > .image-block {
   display: grid;
   grid-template-columns: 660px 362px;
