@@ -1181,24 +1181,14 @@ p {
   cursor: pointer;
 }
 
-.PC > .image-block {
+.image-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 660px 362px;
+  grid-template-rows: 411px 411px;
   gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.image-block img:nth-child(1),
-.image-block img:nth-child(4) {
-  grid-column: span 2;
-}
-
-.image-block img:nth-child(2),
-.image-block img:nth-child(3) {
-  grid-column: span 1;
+  position: absolute;
+  top: 55%;
+  left: 40%;
 }
 
 .how-to div > img:nth-child(1),
@@ -1221,13 +1211,6 @@ img:nth-child(4) {
 img:nth-child(3) {
   width: 362px;
   height: 411px;
-}
-
-.how-to div > img {
-  width: 100%;
-  height: auto;
-  border-radius: 40px;
-  object-fit: cover;
 }
 
 .swiper {
