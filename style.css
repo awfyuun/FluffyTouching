@@ -1191,6 +1191,16 @@ p {
   margin: 0 auto;
 }
 
+.image-block img:nth-child(1),
+.image-block img:nth-child(4) {
+  grid-column: span 2;
+}
+
+.image-block img:nth-child(2),
+.image-block img:nth-child(3) {
+  grid-column: span 1;
+}
+
 .how-to div > img:nth-child(1),
 img:nth-child(3) {
   margin-right: 20px;
@@ -1214,6 +1224,8 @@ img:nth-child(3) {
 }
 
 .how-to div > img {
+  width: 100%;
+  height: auto;
   border-radius: 40px;
   object-fit: cover;
 }
