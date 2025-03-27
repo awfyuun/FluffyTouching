@@ -1185,7 +1185,6 @@ p {
   display: grid;
   grid-template-columns: 660px 362px;
   grid-template-rows: 411px 411px;
-  gap: 20px;
   position: absolute;
   top: 55%;
   left: 40%;
@@ -2383,6 +2382,7 @@ div.plant-8.active {
 .mobile > .contact > .container {
   width: 362px;
   height: 1223px;
+  margin-bottom: 25px;
 }
 
 .mobile > .contact > .container > h1 {
@@ -2430,6 +2430,11 @@ div.plant-8.active {
   width: 362px;
   margin-left: 20px;
 }
+
+.mobile > .contact > .container div > label > p {
+  font-size: 14px;
+}
+
 /* ------ Contact 끝 ------ */
 
 .tool-price {
