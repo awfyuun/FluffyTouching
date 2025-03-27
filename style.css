@@ -1191,9 +1191,8 @@ p {
   left: 40%;
 }
 
-.how-to div > img:nth-child(1),
-img:nth-child(3) {
-  margin-right: 20px;
+.image-block {
+  border-radius: 40px;
 }
 
 .how-to div > img:nth-child(1),
@@ -1886,56 +1885,56 @@ p {
 .basic-plant > .plant-1 {
   position: absolute;
   top: 6.7%;
-  left: 14%;
+  left: 13.6%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-2 {
   position: absolute;
   top: 6.7%;
-  left: 39%;
+  left: 38.9%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-3 {
   position: absolute;
   top: 6.6%;
-  left: 64%;
+  left: 64.1%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-4 {
   position: absolute;
   top: 33.7%;
-  left: 14%;
+  left: 13.6%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-5 {
   position: absolute;
   top: 33.7%;
-  left: 39%;
+  left: 38.9%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-6 {
   position: absolute;
   top: 33.7%;
-  left: 64%;
+  left: 64.1%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-7 {
   position: absolute;
-  top: 60.8%;
-  left: 14%;
+  top: 60.7%;
+  left: 13.6%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-8 {
   position: absolute;
-  top: 60.8%;
-  left: 39%;
+  top: 60.7%;
+  left: 38.9%;
   visibility: hidden;
 }
 
