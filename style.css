@@ -1177,16 +1177,17 @@ p {
   cursor: pointer;
 }
 
-.how-to container {
+.how-to {
   position: absolute;
   top: 55%;
   left: 40%;
 }
 
-.PC > .how-to container > div {
-  width: 1200px;
-  height: 842px;
-  display: inline-block;
+.PC > .image-block {
+  display: grid;
+  grid-template-columns: 660px 362px;
+  grid-template-rows: 411px 411px;
+  gap: 20px;
 }
 
 .how-to div > img:nth-child(1),
@@ -1213,6 +1214,7 @@ img:nth-child(3) {
 
 .how-to div > img {
   border-radius: 40px;
+  object-fit: cover;
 }
 
 .swiper {
