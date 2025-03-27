@@ -238,7 +238,7 @@ nav > a > img {
 .sub-menu-box > li:hover::after {
   opacity: 1;
   width: 6%;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 /* ------ 2차 메뉴 끝 ------ */
 /* ------ 팝업 시작 ------ */
@@ -249,17 +249,18 @@ body.popup-active {
 
 .bg {
   width: 1920px;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.bg .popup, .bg .popup-cart {
+.bg .popup,
+.bg .popup-cart {
   width: 1000px;
   height: 900px;
   background-color: white;
@@ -269,7 +270,7 @@ body.popup-active {
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 40px;
-  transform:translateY(0%);
+  transform: translateY(0%);
 }
 
 .bg .popup div:first-child {
@@ -309,7 +310,7 @@ body.popup-active {
 .bg .popup div > span {
   font-size: 18px;
   font-weight: regular;
-  color: #18C876;
+  color: #18c876;
 }
 
 .bg .popup div input {
@@ -326,7 +327,7 @@ body.popup-active {
   height: 61px;
   border-radius: 15px;
   border: none;
-  background-color: #18C876;
+  background-color: #18c876;
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -347,25 +348,25 @@ body.popup-active {
 }
 
 .LogIn {
-  visibility:hidden;
-  opacity:0;
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index:5;
+  z-index: 5;
   top: 0%;
-  position:absolute;
+  position: absolute;
 }
 
 .LogIn.active {
-  opacity:1;
-  visibility:visible;
-  width:1920px;
-  height:100vh;
-  display:block;
-  z-index:1001;
+  opacity: 1;
+  visibility: visible;
+  width: 1920px;
+  height: 100vh;
+  display: block;
+  z-index: 1001;
 }
 
 html. .LogIn {
-  overflow:hidden;
+  overflow: hidden;
 }
 /* Cart 팝업 */
 .popup-cart {
@@ -437,7 +438,7 @@ html. .LogIn {
 .popup-cart .list {
   width: 860px;
   height: 480px;
-  border-bottom: 1px solid #D7D7D7;
+  border-bottom: 1px solid #d7d7d7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -460,7 +461,7 @@ html. .LogIn {
   height: 61px;
   border-radius: 15px;
   border: none;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -472,7 +473,7 @@ html. .LogIn {
   height: 61px;
   border-radius: 15px;
   border: none;
-  background-color: #18C876;
+  background-color: #18c876;
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -481,25 +482,25 @@ html. .LogIn {
 }
 
 .Cart {
-  visibility:hidden;
-  opacity:0;
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index:5;
+  z-index: 5;
   top: 0%;
-  position:absolute;
+  position: absolute;
 }
 
 .Cart.active {
-  opacity:1;
-  visibility:visible;
-  width:1920px;
-  height:100vh;
-  display:block;
-  z-index:1001;
+  opacity: 1;
+  visibility: visible;
+  width: 1920px;
+  height: 100vh;
+  display: block;
+  z-index: 1001;
 }
 
 html. .Cart {
-  overflow:hidden;
+  overflow: hidden;
 }
 /* ------ 팝업 끝 ------ */
 
@@ -521,7 +522,8 @@ html. .Cart {
   display: flex;
   justify-content: space-between;
 }
-.mobile > .header img:first-child, .mobile > .header img:last-child {
+.mobile > .header img:first-child,
+.mobile > .header img:last-child {
   width: 48px;
   height: 48px;
 }
@@ -540,7 +542,8 @@ html. .Cart {
   display: flex;
   justify-content: space-between;
 }
-.mobile .header img:first-child, .mobile > .header img:last-child {
+.mobile .header img:first-child,
+.mobile > .header img:last-child {
   width: 48px;
   height: 48px;
 }
@@ -563,7 +566,7 @@ html. .Cart {
 }
 
 .mobile .menu div {
-  border: 1px solid #D7D7D7;
+  border: 1px solid #d7d7d7;
   margin: 50px 20px 50px 20px;
   width: 362px;
 }
@@ -576,11 +579,12 @@ html. .Cart {
   padding: 10px;
 }
 
-.mobile .menu a:nth-child(9), .mobile .menu a:nth-child(10) {
+.mobile .menu a:nth-child(9),
+.mobile .menu a:nth-child(10) {
   color: #808080;
-} 
+}
 .mobile .menu a:hover {
-  color: #18C876;
+  color: #18c876;
 }
 
 .mobile .menu a:after {
@@ -596,36 +600,35 @@ html. .Cart {
 
 .mobile .menu a:hover::after {
   opacity: 1;
-  transition: all .3s ease-in;
-} 
-  
+  transition: all 0.3s ease-in;
+}
+
 .mobile-sideBar {
-  visibility:hidden;
-  opacity:0;
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index:5;
-  top:0;
-  position:fixed;
+  z-index: 5;
+  top: 0;
+  position: fixed;
   background-color: white;
   height: 100vh;
 }
 
 .mobile-sideBar.active {
-  opacity:1;
-  visibility:visible;
-  width:1920px;
-  height:100vh;
-  display:block;
-  z-index:1001;
+  opacity: 1;
+  visibility: visible;
+  width: 1920px;
+  height: 100vh;
+  display: block;
+  z-index: 1001;
 }
 
 .mobile-sideBar .menu {
   height: 100%;
-
 }
 
 html .mobile-sideBar {
-  overflow:hidden;
+  overflow: hidden;
 }
 /* ------ 메뉴탭 끝 ------ */
 
@@ -695,7 +698,8 @@ html .mobile-sideBar {
   display: block;
 }
 
-.footer > div > span, .footer-menu a {
+.footer > div > span,
+.footer-menu a {
   color: white;
 }
 
@@ -771,7 +775,6 @@ html .mobile-sideBar {
   font-weight: bold;
 }
 /* ------ Footer 끝 ------ */
-
 
 /* ------ main-image 시작 ------ */
 /* PC */
@@ -1041,22 +1044,22 @@ p {
 }
 
 .mobile > .category button:hover {
-  border: 1px solid #18C876;
-  color: #18C876;
+  border: 1px solid #18c876;
+  color: #18c876;
   transform: scale(1.1);
-  transition: all .9s ease;
+  transition: all 0.9s ease;
 }
 
-.slick-active.slick-center { 
-  transform: scale(1.30);
-  transition: all .9s ease;
+.slick-active.slick-center {
+  transform: scale(1.3);
+  transition: all 0.9s ease;
   background: transparent;
   visibility: visible;
 }
 
 .slick-slide:not(.slick-center) span,
 .slick-slide:not(.slick-center) button {
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   visibility: hidden;
   pointer-events: none;
 }
@@ -1155,7 +1158,7 @@ p {
 }
 
 .how-to > .text {
-  width: 550px;
+  width: 100%;
   position: absolute;
   top: 65%;
   margin-left: 90px;
@@ -1223,12 +1226,14 @@ img:nth-child(3) {
   top: 10%;
   right: -42%;
   margin-right: 90px;
+  height: 100%;
 }
 
 .swiper-slide {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
   border-radius: 40px;
   color: #fff;
   text-align: center;
@@ -1259,11 +1264,11 @@ img:nth-child(3) {
 .how-to .swiper-wrapper p {
   font-size: 36px;
   margin-top: 188px;
-  position: absolute;
-  top: -20%;
+  display: block;
 }
 
 .how-to .swiper-wrapper span {
+  position: relative;
   font-size: 36px;
   font-weight: bold;
   line-height: 50px;
@@ -1296,7 +1301,7 @@ img:nth-child(3) {
   cursor: pointer;
 }
 
-.PC .plant-note > div  > container {
+.PC .plant-note > div > container {
   display: flex;
   width: 1250px;
   height: 400px;
@@ -1337,7 +1342,7 @@ img:nth-child(3) {
 }
 
 .plant-note > .plant-note-box div:hover {
-    border-color: #18C876;
+  border-color: #18c876;
 }
 
 .plant-note > span {
@@ -1452,22 +1457,22 @@ p {
 }
 
 .mobile > .category > a > button:hover {
-  border: 1px solid #18C876;
-  color: #18C876;
+  border: 1px solid #18c876;
+  color: #18c876;
   transform: scale(1.1);
-  transition: all .9s ease;
+  transition: all 0.9s ease;
 }
 
-.slick-active.slick-center { 
-  transform: scale(1.30);
-  transition: all .9s ease;
+.slick-active.slick-center {
+  transform: scale(1.3);
+  transition: all 0.9s ease;
   background: transparent;
   visibility: visible;
 }
 
 .slick-slide:not(.slick-center) span,
 .slick-slide:not(.slick-center) button {
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   visibility: hidden;
   pointer-events: none;
 }
@@ -1745,10 +1750,10 @@ p {
 .plant-box-hover {
   width: 404px;
   height: 600px;
-  background-color: #1D2A24;
+  background-color: #1d2a24;
 }
 
-.plant-box-hover  span {
+.plant-box-hover span {
   color: white;
 }
 
@@ -1762,7 +1767,7 @@ p {
 .plant-box-hover > .line {
   width: 404px;
   height: 1px;
-  background-color: #3B4540;
+  background-color: #3b4540;
   margin-top: 18px;
 }
 
@@ -1770,7 +1775,7 @@ p {
   display: flex;
   justify-self: center;
   align-items: start;
-  background-color: #1D2A24;
+  background-color: #1d2a24;
   width: 334px;
   height: 280px;
   margin-top: 20px;
@@ -1814,7 +1819,8 @@ p {
   margin-top: 32px;
 }
 
-.plant-box-hover > .title-box > .tag-box > img, .plant-box-hover > .title-box > img  {
+.plant-box-hover > .title-box > .tag-box > img,
+.plant-box-hover > .title-box > img {
   width: 33px;
   height: 33px;
   padding-top: 5px;
@@ -1867,7 +1873,8 @@ p {
   margin-top: 34px;
 }
 
-.box-count > .box-count__minus > img, .box-count > .box-count__plus > img {
+.box-count > .box-count__minus > img,
+.box-count > .box-count__plus > img {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -1934,9 +1941,14 @@ p {
   visibility: hidden;
 }
 
-div.plant-1.active, div.plant-2.active, div.plant-3.active,
-div.plant-4.active, div.plant-5.active, div.plant-6.active,
-div.plant-7.active, div.plant-8.active {
+div.plant-1.active,
+div.plant-2.active,
+div.plant-3.active,
+div.plant-4.active,
+div.plant-5.active,
+div.plant-6.active,
+div.plant-7.active,
+div.plant-8.active {
   visibility: visible;
 }
 
@@ -1971,7 +1983,7 @@ div.plant-7.active, div.plant-8.active {
 
 .mobile .plant-box-hover {
   margin-bottom: 61px;
-} 
+}
 /* ------ Basic Plant 끝 ------ */
 
 /* ------ Menu Plant Note 시작 ------ */
@@ -2039,8 +2051,9 @@ div.plant-7.active, div.plant-8.active {
   margin: 10px 0px 261px 40px;
 }
 
-.PC .menu-plant-note div:hover, .mobile .menu-plant-note div:hover {
-    border-color: #18C876;
+.PC .menu-plant-note div:hover,
+.mobile .menu-plant-note div:hover {
+  border-color: #18c876;
 }
 /* ------ Plant Note-article 시작 ------ */
 .PC .article {
@@ -2049,7 +2062,7 @@ div.plant-7.active, div.plant-8.active {
 }
 
 .PC .article > .article-title {
-  border-bottom: 1px solid #18C876;
+  border-bottom: 1px solid #18c876;
   margin-bottom: 50px;
 }
 
@@ -2087,7 +2100,7 @@ div.plant-7.active, div.plant-8.active {
 .article > .article-nav {
   display: flex;
   justify-content: flex-end;
-  border-top: 1px solid #18C876;
+  border-top: 1px solid #18c876;
   margin-top: 79px;
 }
 
@@ -2126,7 +2139,7 @@ div.plant-7.active, div.plant-8.active {
 }
 
 .PC .article > .article-nav > div div:hover {
-  border-color: #18C876;
+  border-color: #18c876;
 }
 
 /* 모바일 */
@@ -2188,7 +2201,7 @@ div.plant-7.active, div.plant-8.active {
 }
 
 .mobile .article > .article-title {
-  border-bottom: 1px solid #18C876;
+  border-bottom: 1px solid #18c876;
   margin-bottom: 50px;
   margin-left: 20px;
 }
@@ -2221,7 +2234,7 @@ div.plant-7.active, div.plant-8.active {
 
 .mobile .article > .article-nav {
   display: block;
-  border-top: 1px solid #18C876;
+  border-top: 1px solid #18c876;
   margin-left: 20px;
 }
 
@@ -2255,7 +2268,7 @@ div.plant-7.active, div.plant-8.active {
 }
 
 .mobile .article > .article-nav > div div:hover {
-  border-color: #18C876;
+  border-color: #18c876;
 }
 /* ------ Menu Plant Note 끝 ------ */
 
@@ -2290,7 +2303,7 @@ div.plant-7.active, div.plant-8.active {
 .contact > .container div > span {
   font-size: 18px;
   font-weight: regular;
-  color: #18C876;
+  color: #18c876;
 }
 
 .contact > .container div input {
@@ -2343,9 +2356,8 @@ div.plant-7.active, div.plant-8.active {
   margin-right: 8px;
   position: relative;
   top: 6px;
-  accent-color: #18C876;
+  accent-color: #18c876;
 }
-
 
 .PC .contact > .container div > label > p {
   font-size: 18px;
@@ -2356,7 +2368,7 @@ div.plant-7.active, div.plant-8.active {
   height: 61px;
   border-radius: 20px;
   border: none;
-  background-color: #18C876;
+  background-color: #18c876;
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -2414,7 +2426,7 @@ div.plant-7.active, div.plant-8.active {
   margin-right: 8px;
   position: relative;
   top: 3px;
-  accent-color: #18C876;
+  accent-color: #18c876;
 }
 
 .mobile > .contact > .container > button {
@@ -2423,7 +2435,6 @@ div.plant-7.active, div.plant-8.active {
 }
 /* ------ Contact 끝 ------ */
 
-
 .tool-price {
   font-size: 24px;
   font-weight: light;
@@ -2431,4 +2442,3 @@ div.plant-7.active, div.plant-8.active {
   align-self: end;
   margin-top: 138px;
 }
-
