@@ -270,7 +270,7 @@ body.popup-active {
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 40px;
-  transform: translateY(0%);
+  transform: translateY(2.5%);
 }
 
 .bg .popup div:first-child {
@@ -365,7 +365,7 @@ body.popup-active {
   z-index: 1001;
 }
 
-html. .LogIn {
+html .LogIn {
   overflow: hidden;
 }
 /* Cart 팝업 */
@@ -404,7 +404,7 @@ html. .LogIn {
   margin-bottom: 54px;
 }
 
-.popup-cart h1 {
+.popup-cart div:nth-child(2) h1 {
   font-size: 48px;
   margin-left: 48px;
 }
@@ -427,12 +427,16 @@ html. .LogIn {
 .popup-cart div:nth-child(3) > input {
   border: none;
   font-size: 18px;
+  flex-grow: 1;
+  height: calc(100% - 2px);
 }
 
 .popup-cart div:nth-child(3) > button {
   border: none;
   background-color: white;
-  transform: translateX(1500%);
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .popup-cart .list {
@@ -448,7 +452,7 @@ html. .LogIn {
   border: none;
   background-color: white;
   color: #d7d7d7;
-  transform: translateX(850%) translateY(-1100%);
+  transform: translateX(830%) translateY(-1100%);
 }
 
 .popup-cart .list > span {
@@ -499,7 +503,7 @@ html. .LogIn {
   z-index: 1001;
 }
 
-html. .Cart {
+html .Cart {
   overflow: hidden;
 }
 /* ------ 팝업 끝 ------ */
