@@ -554,7 +554,6 @@ html .Cart {
 
 .mobile .menu {
   width: 362px;
-  height: ;
   margin-top: 90px;
 }
 
@@ -569,10 +568,16 @@ html .Cart {
   justify-content: center;
 }
 
+.mobile .menu > a:first-child {
+  padding-top: 90px;
+}
+
 .mobile .menu div {
   border: 1px solid #d7d7d7;
   margin: 50px 20px 50px 20px;
   width: 362px;
+  display: flex;
+  justify-self: center;
 }
 
 .mobile .header div .clear {
@@ -618,6 +623,10 @@ html .Cart {
   height: 100vh;
 }
 
+body.mobile-sideBar.active {
+  overflow: hidden;
+}
+
 .mobile-sideBar.active {
   opacity: 1;
   visibility: visible;
@@ -629,6 +638,7 @@ html .Cart {
 
 .mobile-sideBar .menu {
   height: 100%;
+  margin-left: 20px;
 }
 
 html .mobile-sideBar {
@@ -1183,7 +1193,7 @@ p {
 
 .image-block {
   display: grid;
-  grid-template-columns: 660px 362px;
+  grid-template-columns: 660px auto;
   grid-template-rows: 411px 411px;
   position: absolute;
   gap: 20px;
