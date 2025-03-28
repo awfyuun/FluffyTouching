@@ -1196,7 +1196,7 @@ p {
   grid-template-columns: 660px auto;
   grid-template-rows: 411px 411px;
   position: absolute;
-  gap: 20px;
+  gap: 20px0;
   top: 55%;
   left: 40%;
 }
@@ -1208,6 +1208,11 @@ p {
 
 .how-to div > img:nth-child(1),
 img:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.how-to div > img:nth-child(3),
+img:nth-child(4) {
   margin-bottom: 20px;
 }
 
