@@ -530,7 +530,8 @@ html .Cart {
   display: flex;
   justify-content: space-between;
 }
-.mobile > .header > div img {
+
+.header > div img {
   width: 48px;
   height: 48px;
 }
@@ -548,12 +549,6 @@ html .Cart {
   height: 48px;
   display: flex;
   justify-content: space-between;
-}
-
-.mobile .header img:first-child,
-.mobile > .header img:last-child {
-  width: 48px;
-  height: 48px;
 }
 
 .mobile .menu {
