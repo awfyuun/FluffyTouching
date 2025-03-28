@@ -590,6 +590,7 @@ html .Cart {
   height: 20px;
   display: flex;
   align-self: center;
+  justify-content: center;
   padding: 10px;
 }
 
@@ -639,11 +640,6 @@ body.mobile-sideBar.active {
   height: 100vh;
   display: block;
   z-index: 1001;
-}
-
-.mobile-sideBar .header div {
-  display: flex;
-  align-items: center;
 }
 
 .mobile-sideBar .menu {
