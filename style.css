@@ -549,6 +549,7 @@ html .Cart {
   height: 48px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .mobile .header img:first-child,
 .mobile > .header img:last-child {
