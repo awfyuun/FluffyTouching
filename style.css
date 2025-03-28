@@ -629,6 +629,11 @@ html .Cart {
   height: 100vh;
 }
 
+.mobile-sideBar > .header > div {
+  display: flex;
+  align-items: center;
+}
+
 body.mobile-sideBar.active {
   overflow: hidden;
 }
