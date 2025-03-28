@@ -531,9 +531,10 @@ html .Cart {
   justify-content: space-between;
 }
 
-#size {
-  width: 20px;
-  height: 20px;
+.mobile > .header > div img {
+  width: 48px !important;
+  height: 48px !important;
+  background-color: red;
 }
 /* ------ 모바일 사이드바 시작 ------ */
 .mobile .header {
@@ -549,6 +550,12 @@ html .Cart {
   height: 48px;
   display: flex;
   justify-content: space-between;
+}
+
+.mobile .header img:first-child, 
+.mobile > .header img:last-child {
+  width: 48px;
+  height: 48px;
 }
 
 .mobile .menu {
@@ -580,6 +587,8 @@ html .Cart {
 }
 
 .mobile .header div img:last-child {
+  width: 20px;
+  height: 20px;
   display: flex;
   align-self: center;
   justify-content: center;
