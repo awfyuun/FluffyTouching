@@ -585,7 +585,7 @@ html .Cart {
   justify-self: center;
 }
 
-.mobile .header div .clear {
+.mobile .header div img:last-child {
   width: 20px;
   height: 20px;
   display: flex;
