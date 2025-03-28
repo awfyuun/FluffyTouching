@@ -531,9 +531,9 @@ html .Cart {
   justify-content: space-between;
 }
 
-.header > div img {
-  width: 48px;
-  height: 48px;
+.mobile > .header > div img {
+  width: 48px !important;
+  height: 48px !important;
 }
 /* ------ 모바일 사이드바 시작 ------ */
 .mobile .header {
