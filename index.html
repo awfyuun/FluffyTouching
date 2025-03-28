@@ -347,24 +347,24 @@
         </section>
         <section class="how-to">
         <img src="https://imgur.com/gsClQK4.png" alt="">
-        <div class="swiper mySwiper-2 swiper-position">
+        <div class="swiper mySwiper-2-m swiper-position">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <p>01</p>
-                <span>Contact에서<br>케어 서비스를 예약해주세요.</span>
-            </div>
-            <div class="swiper-slide">
-                <p>02</p>
-                <span>Fluffy Touching에서<br>방문 일정을 알려드려요.</span>
-            </div>
-            <div class="swiper-slide">
-                <p>03</p>
-                <span>약속한 날짜에 식물과<br>함께 방문해주세요.</span>
-            </div>
-            <div class="swiper-slide">
-                <p>04</p>
-                <span>식물의 상태를 진단하고,<br>가드닝 방법을 알려드려요.</span>
-            </div>
+                <div class="swiper-slide">
+                    <p>01</p>
+                    <span>Contact에서<br>케어 서비스를 예약해주세요.</span>
+                </div>
+                <div class="swiper-slide">
+                    <p>02</p>
+                    <span>Fluffy Touching에서<br>방문 일정을 알려드려요.</span>
+                </div>
+                <div class="swiper-slide">
+                    <p>03</p>
+                    <span>약속한 날짜에 식물과<br>함께 방문해주세요.</span>
+                </div>
+                <div class="swiper-slide">
+                    <p>04</p>
+                    <span>식물의 상태를 진단하고,<br>가드닝 방법을 알려드려요.</span>
+                </div>
             </div>
         </div>
         <div class="text">
@@ -438,11 +438,13 @@
 <script>
 // SideBar
 function sideBar__show() {
-    $('.mobile-sideBar').addClass('active'); 
+    $('.mobile-sideBar').addClass('active');
+    $('html, body').css('overflow','hidden'); 
 }
 
 function sideBar__hide() {
-    $('.mobile-sideBar').removeClass('active'); 
+    $('.mobile-sideBar').removeClass('active');
+    $('html, body').css('overflow','visible'); 
 }
 
 
@@ -460,36 +462,30 @@ sideBar__init();
 
 // Swiper
 var swiper = new Swiper(".mySwiper-1", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-    },
-    pagination: {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+  rotate: 50,
+  stretch: 0,
+  depth: 100,
+  modifier: 1,
+  slideShadows: true,
+  },
+  pagination: {
     el: ".swiper-pagination",
-    },
+  },
 });
 
 var swiper = new Swiper(".mySwiper-2", {
-    effect: "cards",
-    grabCursor: true,
+  effect: "cards",
+  grabCursor: true,
 });
 
-
-// catrgory-swiper
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    },
+var swiper = new Swiper(".mySwiper-2-m", {
+  effect: "cards",
+  grabCursor: true,
 });
 
 //Slide

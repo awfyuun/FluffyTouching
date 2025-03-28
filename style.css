@@ -1192,9 +1192,9 @@ p {
 }
 
 .image-block {
-  display: grid;
-  grid-template-columns: 660px auto;
-  grid-template-rows: 411px 411px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1042px;
   align-items: start;
   position: absolute;
   gap: 20px;
