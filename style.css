@@ -557,11 +557,6 @@ html .Cart {
   height: 48px;
 }
 
-.mobile > .header img:last-child {
-  display: flex;
-  align-self: center;
-}
-
 .mobile .menu {
   width: 362px;
   margin-top: 90px;
@@ -644,6 +639,11 @@ body.mobile-sideBar.active {
   height: 100vh;
   display: block;
   z-index: 1001;
+}
+
+.mobile-sideBar .header div {
+  display: flex;
+  align-items: center;
 }
 
 .mobile-sideBar .menu {
