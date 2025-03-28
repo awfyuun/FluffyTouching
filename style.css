@@ -531,10 +531,9 @@ html .Cart {
   justify-content: space-between;
 }
 
-.mobile > .header > div img {
-  width: 48px !important;
-  height: 48px !important;
-  background-color: red;
+#size {
+  width:48px;
+  height: 48px;
 }
 /* ------ 모바일 사이드바 시작 ------ */
 .mobile .header {
