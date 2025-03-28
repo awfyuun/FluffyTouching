@@ -44,6 +44,10 @@ a {
   border: none;
   background-color: transparent;
 }
+
+.strong {
+  font-weight: bold;
+}
 /* ------ 노말라이즈 끝 ------ */
 /* ------ 커스텀 시작 ------ */
 @media (max-width: 403px) {
@@ -592,7 +596,7 @@ html .Cart {
 .mobile .menu a:nth-child(10) {
   color: #808080;
 }
-.mobile .menu a:hover {
+.mobile .menu a:not(:first-child):hover {
   color: #18c876;
 }
 
