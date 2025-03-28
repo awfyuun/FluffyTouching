@@ -530,8 +530,7 @@ html .Cart {
   display: flex;
   justify-content: space-between;
 }
-.mobile > .header > div:first-child,
-.mobile > .header > div:last-child {
+.mobile > .header > div img {
   width: 48px;
   height: 48px;
 }
