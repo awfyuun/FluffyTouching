@@ -534,6 +534,7 @@ html .Cart {
 .mobile > .header > div img {
   width: 48px !important;
   height: 48px !important;
+  background-color: red;
 }
 /* ------ 모바일 사이드바 시작 ------ */
 .mobile .header {
@@ -580,8 +581,6 @@ html .Cart {
 }
 
 .mobile .header div img:last-child {
-  width: 20px;
-  height: 20px;
   display: flex;
   align-self: center;
   justify-content: center;
