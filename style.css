@@ -594,7 +594,6 @@ html .Cart {
   display: flex;
   align-self: center;
   justify-content: center;
-  padding: 10px;
 }
 
 .mobile .menu a:nth-child(9),
