@@ -385,7 +385,7 @@ html .LogIn {
   bottom: 0;
 }
 
-body.popup-m-active {
+body .popup-m-active {
   overflow: hidden;
 }
 
@@ -774,7 +774,7 @@ html .Cart {
   margin-left: 14px;
 }
 
-.Cart {
+.Cart-m {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
