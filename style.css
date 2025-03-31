@@ -467,7 +467,7 @@ body.popup-m-active {
   border-radius: 15px;
   border: none;
   background-color: #18c876;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   margin-top: 52px;
@@ -479,7 +479,7 @@ body.popup-m-active {
   border-radius: 15px;
   border: 1px solid #808080;
   background-color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #393939;
   margin-top: 13px;
