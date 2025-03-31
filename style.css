@@ -291,12 +291,11 @@ body.popup-active {
   margin-right: 48px;
 }
 
-.bg .popup .logo {
+.bg .popup img {
   width: 239px;
   margin-bottom: 39px;
   display: flex;
   justify-self: center;
-  background-color: red;
 }
 
 .bg .popup > div:last-child {
@@ -419,7 +418,6 @@ body.popup-m-active {
   display: flex;
   justify-content: flex-end;
   margin: 48px 0 92px 0;
-  background-color: red;
 }
 
 .bg .popup-m a > img {
@@ -433,7 +431,6 @@ body.popup-m-active {
   margin-bottom: 39px;
   display: flex;
   justify-self: center;
-  background-color: gold;
 }
 
 .bg .popup-m > div:last-child {
@@ -689,12 +686,12 @@ html .Cart {
 }
 
 .popup-cart-m div:nth-child(3) {
-  width: 344px;
+  width: 300px;
   height: 99px;
   border: 1px solid #d7d7d7;
   border-radius: 10px;
   padding: 0 40px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .popup-cart-m nav > span {
@@ -710,7 +707,7 @@ html .Cart {
 
 .popup-cart-m nav {
   display: flex;
-  width: 344px;
+  width: 304px;
   height: 30px;
   margin-top: 15px;
   align-items: center;
@@ -729,7 +726,7 @@ html .Cart {
 .popup-cart-m .list {
   width: 344px;
   height: 480px;
-  margin: 0 auto;
+  margin: 0 40px;
   border-bottom: 1px solid #d7d7d7;
   display: flex;
   justify-content: center;
@@ -740,16 +737,16 @@ html .Cart {
   border: none;
   background-color: white;
   color: #d7d7d7;
-  transform: translateX(830%) translateY(-1100%);
+  transform: translateX(340%) translateY(-1100%);
 }
 
 .popup-cart-m .list > span {
-  font-size: 24px;
+  font-size: 16px;
   color: #808080;
 }
 
 .popup-cart-m .btn_box {
-  margin: 0 auto;
+  margin-left: 40px;
 }
 
 .popup-cart-m .btn_box button {
@@ -758,7 +755,7 @@ html .Cart {
   border-radius: 15px;
   border: none;
   background-color: #d7d7d7;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   margin-top: 52px;
@@ -770,7 +767,7 @@ html .Cart {
   border-radius: 15px;
   border: none;
   background-color: #18c876;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   margin-top: 52px;
