@@ -291,11 +291,12 @@ body.popup-active {
   margin-right: 48px;
 }
 
-.bg .popup img {
+.bg .popup .logo {
   width: 239px;
   margin-bottom: 39px;
   display: flex;
   justify-self: center;
+  background-color: red;
 }
 
 .bg .popup > div:last-child {
@@ -372,6 +373,144 @@ body.popup-active {
 html .LogIn {
   overflow: hidden;
 }
+/* 모바일 LogIn 팝업 */
+.mobile .bg {
+  width: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body.popup-m-active {
+  overflow: hidden;
+}
+
+.mobile .bg {
+  width: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg .popup-m,
+.bg .popup-cart-m {
+  width: 420px;
+  height: 900px;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+}
+
+.bg .popup-m div:first-child {
+  width: 420px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 48px 0 92px 0;
+  background-color: red;
+}
+
+.bg .popup-m a > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 48px;
+}
+
+.bg .popup-m img {
+  width: 239px;
+  margin-bottom: 39px;
+  display: flex;
+  justify-self: center;
+  background-color: gold;
+}
+
+.bg .popup-m > div:last-child {
+  width: 290px;
+  height: 580px;
+  margin: 0 50px;
+}
+
+.bg .popup-m > span {
+  font-size: 18px;
+  line-height: 28px;
+  display: inline-block;
+  margin-bottom: 48px;
+}
+
+.bg .popup-m div > span {
+  font-size: 18px;
+  font-weight: regular;
+  color: #18c876;
+}
+
+.bg .popup-m div input {
+  border-radius: 15px;
+  border-color: #d7d7d7;
+  width: 290px;
+  height: 50px;
+  margin-top: 14px;
+  margin-bottom: 40px;
+}
+
+.bg .popup-m button {
+  width: 290px;
+  height: 61px;
+  border-radius: 15px;
+  border: none;
+  background-color: #18c876;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-top: 52px;
+}
+
+.bg .popup-m button:last-child {
+  width: 290px;
+  height: 61px;
+  border-radius: 15px;
+  border: 1px solid #808080;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  color: #393939;
+  margin-top: 13px;
+  margin-bottom: 160px;
+}
+
+.LogIn-m {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 5;
+  top: 0%;
+  position: absolute;
+}
+
+.LogIn-m.active {
+  opacity: 1;
+  visibility: visible;
+  width: 420px;
+  height: 100vh;
+  display: block;
+  z-index: 1001;
+}
+
+html .LogIn-m {
+  overflow: hidden;
+}
+/* 모바일 LogIn 팝업 끝 */
 /* Cart 팝업 */
 .popup-cart {
   width: 1000px;
@@ -508,6 +647,155 @@ html .LogIn {
 }
 
 html .Cart {
+  overflow: hidden;
+}
+/* 모바일 Cart 팝업 */
+.popup-cart-m {
+  width: 420px;
+  height: 900px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+}
+
+.popup-cart-m div:first-child {
+  width: 420px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 48px 0 30px 0;
+}
+
+.popup-cart-m a > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 48px;
+}
+
+.popup-cart-m div:nth-child(2) {
+  width: 420px;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.popup-cart-m div:nth-child(2) h1 {
+  font-size: 48px;
+  margin-left: 48px;
+}
+
+.popup-cart-m div:nth-child(3) {
+  width: 344px;
+  height: 99px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  padding: 0 40px;
+  margin-left: 50px;
+}
+
+.popup-cart-m nav > span {
+  font-size: 18px;
+}
+
+.popup-cart-m div:nth-child(3) > input {
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  height: 53%;
+}
+
+.popup-cart-m nav {
+  display: flex;
+  width: 344px;
+  height: 30px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-cart-m nav > button {
+  border: none;
+  background-color: white;
+  display: flex;
+  align-self: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup-cart-m .list {
+  width: 344px;
+  height: 480px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-cart-m .list > button {
+  border: none;
+  background-color: white;
+  color: #d7d7d7;
+  transform: translateX(830%) translateY(-1100%);
+}
+
+.popup-cart-m .list > span {
+  font-size: 24px;
+  color: #808080;
+}
+
+.popup-cart-m .btn_box {
+  margin: 0 auto;
+}
+
+.popup-cart-m .btn_box button {
+  width: 170px;
+  height: 61px;
+  border-radius: 15px;
+  border: none;
+  background-color: #d7d7d7;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-top: 52px;
+}
+
+.popup-cart-m .btn_box button:last-child {
+  width: 170px;
+  height: 61px;
+  border-radius: 15px;
+  border: none;
+  background-color: #18c876;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-top: 52px;
+  margin-left: 14px;
+}
+
+.Cart {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 5;
+  top: 0%;
+  position: absolute;
+}
+
+.Cart-m.active {
+  opacity: 1;
+  visibility: visible;
+  width: 420px;
+  height: 100vh;
+  display: block;
+  z-index: 1001;
+}
+
+html .Cart-m {
   overflow: hidden;
 }
 /* ------ 팝업 끝 ------ */
