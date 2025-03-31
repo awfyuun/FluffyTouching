@@ -516,6 +516,7 @@ html .Cart {
 .mobile {
   width: 402px;
 }
+
 .mobile > .header {
   display: flex;
   width: 402px;
@@ -528,14 +529,13 @@ html .Cart {
   width: 362px;
   height: 48px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .mobile > .header > div img {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
+  width: 48px !important;
+  height: 48px !important;
 }
 
 /* ------ 모바일 사이드바 시작 ------ */
