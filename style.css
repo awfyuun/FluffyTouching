@@ -2031,10 +2031,14 @@ p {
 /* PC */
 .PC .basic-plant {
   max-width: 1920px;
-  width: 100%;
+  width: 1920px;
   height: 2419px;
   background-color: white;
   justify-content: center;
+  position: relative;
+}
+
+.basic-plant > .plant-box {
   position: relative;
 }
 
@@ -2201,7 +2205,7 @@ p {
 
 /* hover */
 .basic-plant > .plant-1 {
-  position: absolute;
+  position: fixed;
   top: 6.7%;
   left: 13.6%;
   visibility: hidden;
