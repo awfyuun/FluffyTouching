@@ -1575,8 +1575,8 @@ img:nth-child(3) {
 }
 
 .how-to .swiper-wrapper p {
-  font-size: 36px;
   margin-top: 188px;
+  font-size: 36px;
   display: block;
 }
 
@@ -1932,7 +1932,7 @@ p {
 .mobile .swiper-wrapper {
   position: absolute;
   top: 10%;
-  right: -42%;
+  right: -62%;
   margin-right: 30px;
 }
 
@@ -1954,6 +1954,8 @@ p {
 
 .mobile .how-to .swiper-wrapper p {
   font-size: 18px;
+  position: absolute;
+  top: -20%;
 }
 
 .mobile .how-to .swiper-wrapper span {
