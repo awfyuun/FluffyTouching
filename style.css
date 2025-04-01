@@ -2205,58 +2205,58 @@ p {
 
 /* hover */
 .basic-plant > .plant-1 {
-  position: fixed;
+  position: absolute;
   top: 6.7%;
-  left: 13.6%;
+  left: 14.4%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-2 {
   position: absolute;
   top: 6.7%;
-  left: 38.9%;
+  left: 39.5%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-3 {
   position: absolute;
   top: 6.6%;
-  left: 64.1%;
+  left: 64.6%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-4 {
   position: absolute;
   top: 33.7%;
-  left: 13.6%;
+  left: 14.4%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-5 {
   position: absolute;
   top: 33.7%;
-  left: 38.9%;
+  left: 39.5%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-6 {
   position: absolute;
   top: 33.7%;
-  left: 64.1%;
+  left: 39.5%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-7 {
   position: absolute;
   top: 60.7%;
-  left: 13.6%;
+  left: 14.4%;
   visibility: hidden;
 }
 
 .basic-plant > .plant-8 {
   position: absolute;
   top: 60.7%;
-  left: 38.9%;
+  left: 39.5%;
   visibility: hidden;
 }
 
